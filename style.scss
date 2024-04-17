@@ -351,6 +351,8 @@ button {
 }
 
 .NFT {
+    margin-bottom: 70px;
+
     &__left {
         padding: 30px 30px 22px 30px;
         background-image: url('../image/Discover.jpg'),;
@@ -490,5 +492,89 @@ button {
         &-bottom {
             margin-top: 16px;
         }
+    }
+}
+
+.trending {
+    margin-bottom: 31px;
+
+    &__row {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__buttons {
+        line-height: 1;
+    }
+
+    &__button {
+        padding: 0 13px 3px 13px;
+        box-sizing: border-box;
+        background-color: transparent;
+
+
+        &.active {
+            background: #6f4ff2;
+            border-radius: 14px;
+        }
+    }
+}
+
+.bids {
+    margin-bottom: 50px;
+    
+    &__row {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    &__card {
+        background: #1d1932;
+        border-radius: 18px;
+        padding: 20px 20px 21px 19px;
+        box-sizing: border-box;
+    }
+
+    &__image {
+        margin-bottom: 30px;
+    }
+
+    &__auction {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        justify-content: space-between;
+    }
+
+    &__current {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        text-align: end;
+
+        & span:last-child {
+            color: #6f4ff2;
+        }
+    }
+
+    &__time {
+        display: flex;
+        justify-content: space-between;
+        line-height: 1;
+        margin-bottom: 30px;
+
+        & span {
+            color: #6c7aa0;
+        }
+    }
+
+    &__button {
+        border-radius: 9px;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 10px;
+        width: 100%;
+        background: #6f4ff2;
     }
 }
