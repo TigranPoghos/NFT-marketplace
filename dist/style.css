@@ -484,3 +484,99 @@ button {
   width: 100%;
   background: #6f4ff2;
 }
+
+.graph {
+  margin-bottom: 49px;
+}
+.graph__row {
+  justify-content: space-between;
+}
+.graph__bid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.graph__block {
+  display: flex;
+  padding: 21px 28px 20px 20px;
+  box-sizing: border-box;
+  background: #1d1932;
+  border-radius: 18px;
+  max-width: 290px;
+  justify-content: space-between;
+}
+.graph__block-image {
+  padding: 18px;
+  max-width: 55px;
+  border-radius: 100%;
+  background-color: #6f4ff2;
+  margin-right: 15px;
+}
+.graph__block-image-red {
+  background-color: #dc3546;
+}
+.graph__block-image-green {
+  background-color: #50bb25;
+}
+.graph__block-image img {
+  max-width: 19px;
+  min-height: 19px;
+}
+.graph__block-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: auto;
+}
+.graph__block-number span:last-child {
+  color: #68676e;
+}
+.graph__block-content {
+  color: #50bb25;
+  line-height: 17px;
+}
+.graph__block-content-red {
+  color: #dc3546;
+}
+.graph__container {
+  padding: 28.5px 19px;
+  box-sizing: border-box;
+  background: #1d1932;
+  border-radius: 18px;
+}
+.graph__third {
+  padding: 21px 30px 35px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: #1d1932;
+  border-radius: 18px;
+  align-items: center;
+}
+.graph__third-image {
+  margin-bottom: 15px;
+}
+.graph__atwork {
+  display: flex;
+  gap: 49px;
+  align-items: center;
+}
+.graph__atwork-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.graph__atwork-circle {
+  border: 1px solid #fff;
+  border-radius: 9px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+}
+.graph__atwork-circle.blue {
+  background: #6f4ff2;
+}
+.graph__atwork-content {
+  color: #68676e;
+  line-height: 17px;
+}

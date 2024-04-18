@@ -578,3 +578,118 @@ button {
         background: #6f4ff2;
     }
 }
+
+.graph {
+    margin-bottom: 49px;
+
+    &__row {
+        justify-content: space-between;
+    }
+
+    &__bid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__block {
+        display: flex;
+        padding: 21px 28px 20px 20px;
+        box-sizing: border-box;
+        background: #1d1932;
+        border-radius: 18px;
+        max-width: 290px;
+        justify-content: space-between;
+        
+        &-image {
+            padding: 18px;
+            max-width: 55px;
+            border-radius: 100%;
+            background-color: #6f4ff2;
+            margin-right: 15px;
+
+            &-red {
+                background-color: #dc3546;
+            }
+
+            &-green {
+                background-color: #50bb25;
+            }
+
+            & img {
+                max-width: 19px;
+                min-height: 19px;
+            }
+        }
+
+        &-number {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: auto;
+
+            & span:last-child {
+                color: #68676e;
+            }
+        }
+
+        &-content {
+            color: #50bb25;
+            line-height: 17px;
+
+            &-red {
+                color: #dc3546;
+            }
+        }
+    }
+
+    &__container {
+        padding: 28.5px 19px;
+        box-sizing: border-box;
+        background: #1d1932;
+        border-radius: 18px;
+    }
+
+    &__third {
+        padding: 21px 30px 35px 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        background: #1d1932;
+        border-radius: 18px;
+        align-items: center;
+
+        &-image {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__atwork {
+        display: flex;
+        gap: 49px;
+        align-items: center;
+
+        &-item {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        &-circle {
+            border: 1px solid #fff;
+            border-radius: 9px;
+            width: 18px;
+            height: 18px;
+            box-sizing: border-box;
+
+            &.blue {
+                background: #6f4ff2;
+            }
+        }
+
+        &-content {
+            color: #68676e;
+            line-height: 17px;
+        }
+    }
+}
