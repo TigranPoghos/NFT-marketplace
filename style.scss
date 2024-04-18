@@ -693,3 +693,110 @@ button {
         }
     }
 }
+
+.activity {
+    margin-bottom: 50px;
+    
+    &__row {
+        justify-content: space-between;
+    }
+
+    &__recent {
+        display: flex;
+        flex-direction: column;
+        max-width: 443px;
+        width: 100%;
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        &-content {
+            &.blue {
+                color: #6f4ff2;
+                line-height: 17px;
+            }
+        }
+
+        &-subtitle {
+            line-height: 22px;
+        }
+
+        &-block {
+            background: #1d1932;
+            border-radius: 18px;
+            padding: 5px 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px 15.8px 20px;
+            border-bottom: 0.2px solid #d6dbde;
+            box-sizing: border-box;
+
+            &:last-child {
+                border: none;
+            }
+        }
+
+        &-name {
+            display: flex;
+            flex-direction: column;
+            margin-left: 19px;
+            margin-right: auto;
+
+            & span:first-child {
+                line-height: 24px;
+            }
+
+            & span:last-child {
+                line-height: 18px;
+            }
+        }
+
+        &-time {
+            color: #68676e;
+        }
+    }
+
+    &__creator {
+        display: flex;
+        flex-direction: column;
+        max-width: 742px;
+        width: 100%;
+
+        &-items {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            column-gap: 30px;
+        }
+
+        &-item {
+            background: #1d1932;
+            border-radius: 18px;
+            padding: 19px 20px;
+            box-sizing: border-box;
+            display: flex;
+            max-width: 356px;
+            align-items: center;
+            width: 100%;
+        }
+
+        &-button {
+            font-weight: 600;
+            padding: 2.5px 18px;
+            box-sizing: border-box;
+            border: 1px solid #6f4ff2;
+            background: rgba(111, 79, 242, 0);
+            border-radius: 9px;
+            line-height: 21px;
+        }
+    }
+}
