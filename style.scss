@@ -696,7 +696,7 @@ button {
 
 .activity {
     margin-bottom: 50px;
-    
+
     &__row {
         justify-content: space-between;
     }
@@ -797,6 +797,88 @@ button {
             background: rgba(111, 79, 242, 0);
             border-radius: 9px;
             line-height: 21px;
+        }
+    }
+}
+
+.active {
+    &__row {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    &__table {
+        margin-top: 50px;
+
+        & thead {
+            margin-bottom: 30px;
+            display: flex;
+
+            & .active__table-tr {
+                background: transparent;
+                padding:0 10px 11px 11px;
+                border-bottom: 0.6px solid #6c7aa0;
+                margin-bottom: 0;
+                border-radius: 0;
+            }
+        }
+
+        &-tr {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 27px 8px 11px;
+            box-sizing: border-box;
+            align-items: center;
+            background: #1d1932;
+            border-radius: 18px;
+            margin-bottom: 20px;
+        }
+
+        &-th {
+            line-height: 18.2px;
+
+            &.first {
+                margin-right: 70px;
+            }
+
+            &.second {
+                margin-right: 230px;
+            }
+
+            &.third {
+                margin-right: 100px;
+            }
+
+            &.fourth {
+                margin-right: 100px;
+            }
+
+            &.fifth {
+                margin-right: 130px;
+            }
+
+            &.sixth {
+                margin-right: 138px;
+            }
+
+            &.seventh {
+                margin-right: 0px;
+            }
+        }
+
+        &-content {
+            font-weight: 600;
+        }
+
+        &-form {
+            line-height: 0;
+        }
+        
+        &-checkbox {
+            max-width: 12px;
+            max-height: 12px;
+            background: #c4c4c4;
+            border-radius: 2px;
         }
     }
 }

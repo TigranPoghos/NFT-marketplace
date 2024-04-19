@@ -669,3 +669,68 @@ button {
   border-radius: 9px;
   line-height: 21px;
 }
+
+.active__row {
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.active__table {
+  margin-top: 50px;
+}
+.active__table thead {
+  margin-bottom: 30px;
+  display: flex;
+}
+.active__table thead .active__table-tr {
+  background: transparent;
+  padding: 0 10px 11px 11px;
+  border-bottom: 0.6px solid #6c7aa0;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.active__table-tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 27px 8px 11px;
+  box-sizing: border-box;
+  align-items: center;
+  background: #1d1932;
+  border-radius: 18px;
+  margin-bottom: 20px;
+}
+.active__table-th {
+  line-height: 18.2px;
+}
+.active__table-th.first {
+  margin-right: 70px;
+}
+.active__table-th.second {
+  margin-right: 230px;
+}
+.active__table-th.third {
+  margin-right: 100px;
+}
+.active__table-th.fourth {
+  margin-right: 100px;
+}
+.active__table-th.fifth {
+  margin-right: 130px;
+}
+.active__table-th.sixth {
+  margin-right: 138px;
+}
+.active__table-th.seventh {
+  margin-right: 0px;
+}
+.active__table-content {
+  font-weight: 600;
+}
+.active__table-form {
+  line-height: 0;
+}
+.active__table-checkbox {
+  max-width: 12px;
+  max-height: 12px;
+  background: #c4c4c4;
+  border-radius: 2px;
+}
