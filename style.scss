@@ -820,13 +820,14 @@ button {
                 border-bottom: 0.6px solid #6c7aa0;
                 margin-bottom: 0;
                 border-radius: 0;
+                width: 100%;
             }
         }
 
         &-tr {
             display: flex;
             justify-content: space-between;
-            padding: 8px 27px 8px 11px;
+            padding: 8px 28px 8px 11px;
             box-sizing: border-box;
             align-items: center;
             background: #1d1932;
@@ -834,8 +835,60 @@ button {
             margin-bottom: 20px;
         }
 
+        &-td {
+            display: flex;
+            gap: 10px;
+            padding: 0;
+            align-items: center;
+
+            &.second {
+                margin-left: 0;
+                margin-right: auto;
+                max-width: 280px;
+            }
+
+            &.third {
+                margin-right: 103px;
+                margin-left: 0;
+            }
+
+            &.fourth {
+                margin-left: 0;
+                margin-right: 97px;
+            }
+
+            &.fifth {
+                margin-left: 0;
+                margin-right: 94px;
+            }
+
+            &.sixth {
+                margin-left: 0;
+                margin-right: 110px;
+            }
+
+            &.seventh {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        &-name {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-image {
+            max-width: 65px;
+        }
+
+        &-avatar {
+            max-width: 43px;
+        }
+
         &-th {
-            line-height: 18.2px;
+            line-height: 20.2px;
+            padding: 0;
 
             &.first {
                 margin-right: 70px;
@@ -858,7 +911,7 @@ button {
             }
 
             &.sixth {
-                margin-right: 138px;
+                margin-right: 150px;
             }
 
             &.seventh {
