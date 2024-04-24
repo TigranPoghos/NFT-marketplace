@@ -143,6 +143,10 @@ button {
         align-items: center;
         justify-content: space-between;
         padding: 30px 0 50px 0;
+
+        &-bid {
+            padding-bottom: 30px;
+        }
     }
 
     &__form {
@@ -600,6 +604,7 @@ button {
         border-radius: 18px;
         max-width: 290px;
         justify-content: space-between;
+        width: 100%;
         
         &-image {
             padding: 18px;
@@ -614,6 +619,10 @@ button {
 
             &-green {
                 background-color: #50bb25;
+            }
+
+            &-yellow {
+                background-color: #F9D62C;
             }
 
             & img {
@@ -933,5 +942,63 @@ button {
             background: #c4c4c4;
             border-radius: 2px;
         }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    &__button {
+        border-radius: 9px;
+        background: #6f4ff2;
+        box-sizing: border-box;
+        padding: 9.5px 33px;
+
+        & span {
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+            line-height: 21px;
+            display: flex;
+        }
+    }
+}
+
+.Bid {
+    &__row {
+        padding-bottom: 44px;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-bottom: 2px;
+    }
+
+    &__welcome {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 30px;
+    }
+    
+    &__href {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        &-content {
+            display: flex;
+            line-height: 21px;
+            color: #6c7aa0;
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
     }
 }

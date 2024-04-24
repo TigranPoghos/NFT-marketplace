@@ -144,6 +144,9 @@ button {
   justify-content: space-between;
   padding: 30px 0 50px 0;
 }
+.header__row-bid {
+  padding-bottom: 30px;
+}
 .header__form {
   max-width: 380px;
   position: relative;
@@ -504,6 +507,7 @@ button {
   border-radius: 18px;
   max-width: 290px;
   justify-content: space-between;
+  width: 100%;
 }
 .graph__block-image {
   padding: 18px;
@@ -517,6 +521,9 @@ button {
 }
 .graph__block-image-green {
   background-color: #50bb25;
+}
+.graph__block-image-yellow {
+  background-color: #F9D62C;
 }
 .graph__block-image img {
   max-width: 19px;
@@ -776,4 +783,52 @@ button {
   max-height: 12px;
   background: #c4c4c4;
   border-radius: 2px;
+}
+.active__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.active__button {
+  border-radius: 9px;
+  background: #6f4ff2;
+  box-sizing: border-box;
+  padding: 9.5px 33px;
+}
+.active__button span {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  line-height: 21px;
+  display: flex;
+}
+
+.Bid__row {
+  padding-bottom: 44px;
+  flex-direction: column;
+}
+.Bid__title {
+  margin-bottom: 2px;
+}
+.Bid__welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.Bid__href {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Bid__href-content {
+  display: flex;
+  line-height: 21px;
+  color: #6c7aa0;
+}
+.Bid__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
