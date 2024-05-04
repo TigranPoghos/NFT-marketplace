@@ -428,6 +428,9 @@ button {
 .trending__buttons {
   line-height: 1;
 }
+.trending__buttons-collection {
+  margin-bottom: 20px;
+}
 .trending__button {
   padding: 0 13px 3px 13px;
   box-sizing: border-box;
@@ -831,4 +834,29 @@ button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+
+.heart__row {
+  flex-direction: column;
+}
+.heart__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.heart__title-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.heart__title-right {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: 0;
+  align-items: center;
+}
+.heart__title-right .content {
+  color: #6c7aa0;
+  line-height: 21px;
 }

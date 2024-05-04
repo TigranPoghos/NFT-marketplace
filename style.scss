@@ -509,6 +509,10 @@ button {
 
     &__buttons {
         line-height: 1;
+
+        &-collection {
+            margin-bottom: 20px;
+        }
     }
 
     &__button {
@@ -1000,5 +1004,36 @@ button {
         display: flex;
         justify-content: space-between;
         margin-bottom: 50px;
+    }
+}
+
+.heart {
+    &__row {
+        flex-direction: column;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &-right {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+            margin-bottom: 0;
+            align-items: center;
+
+            & .content {
+                color: #6c7aa0;
+                line-height: 21px;
+            }
+        }
     }
 }
