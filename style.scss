@@ -1035,5 +1035,79 @@ button {
                 line-height: 21px;
             }
         }
+
+        &-profile {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.profile {
+    &__row {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        max-width: 380px;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 12px;
+        background: #1d1932;
+        
+        &-avatar {
+            margin-bottom: 10px;
+
+            & img {
+                max-width: 44px;
+                border: 2px solid #fff;
+                border-radius: 21px;
+                box-sizing: border-box;
+            }
+        }
+
+        & .subtitle {
+            margin-bottom: 10px;
+        }
+
+        &-verify {
+            margin-top: 40px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            & .content {
+                color: #6f4ff2;
+            }
+
+            &-image {
+                padding: 8px;
+                box-sizing: border-box;
+                background-color: #50bb25;
+                border-radius: 100%;
+
+                & img {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+
+        &-auth {
+            margin-top: 0;
+
+            &-image {
+                background-color: #6f4ff2;
+            }
+        }
+
+        &-line {
+            width: 100%;
+            background-color: #d6dbde;
+            height: 0.4px;
+            margin: 15px 0;
+        }
     }
 }

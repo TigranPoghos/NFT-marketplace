@@ -860,3 +860,63 @@ button {
   color: #6c7aa0;
   line-height: 21px;
 }
+.heart__title-profile {
+  margin-bottom: 30px;
+}
+
+.profile__row {
+  display: flex;
+  margin-bottom: 50px;
+}
+.profile__left {
+  display: flex;
+  flex-direction: column;
+  max-width: 380px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #1d1932;
+}
+.profile__left-avatar {
+  margin-bottom: 10px;
+}
+.profile__left-avatar img {
+  max-width: 44px;
+  border: 2px solid #fff;
+  border-radius: 21px;
+  box-sizing: border-box;
+}
+.profile__left .subtitle {
+  margin-bottom: 10px;
+}
+.profile__left-verify {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.profile__left-verify .content {
+  color: #6f4ff2;
+}
+.profile__left-verify-image {
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #50bb25;
+  border-radius: 100%;
+}
+.profile__left-verify-image img {
+  width: 14px;
+  height: 14px;
+}
+.profile__left-auth {
+  margin-top: 0;
+}
+.profile__left-auth-image {
+  background-color: #6f4ff2;
+}
+.profile__left-line {
+  width: 100%;
+  background-color: #d6dbde;
+  height: 0.4px;
+  margin: 15px 0;
+}
