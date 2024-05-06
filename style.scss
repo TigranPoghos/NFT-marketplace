@@ -1056,6 +1056,7 @@ button {
         box-sizing: border-box;
         border-radius: 12px;
         background: #1d1932;
+        margin-right: 30px;
         
         &-avatar {
             margin-bottom: 10px;
@@ -1108,6 +1109,63 @@ button {
             background-color: #d6dbde;
             height: 0.4px;
             margin: 15px 0;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        &-subtitle {
+            margin-bottom: 20px;
+        }
+
+        &-button {
+            background: #dc3546;
+            border: none;
+            padding: 3.5px 18px;
+        }
+    }
+}
+
+.wave {
+    &__row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        background: #1d1932;
+        border-radius: 18px;
+        padding: 20px 20px 20px 19px;
+        box-sizing: border-box;
+
+        &-absolute {
+            margin-bottom: 0;
+            position: absolute;
+            bottom: 30px;
+            right: 60px;
         }
     }
 }
