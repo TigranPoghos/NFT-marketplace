@@ -49,6 +49,290 @@ body {
     flex-direction: column;
     background: #131129;
     font-family: "Poppins";
+
+    &.active {
+        background: #F2F2F2;
+
+        .title {
+            color: #000;
+        }
+        
+        .subtitle {
+            color: #000;
+        }
+        
+        .content {
+            color: #000;
+        }
+        
+        .other-text {
+            color: #000;
+        }
+        
+        .content-600 {
+            color: #000;
+        }
+
+        & .header {
+            &__right {
+                &-dark {
+                    display: flex;
+                }
+
+                &-light {
+                    display: none;
+                }
+            }
+
+            &__form {
+                & input {
+                    background: #fff;
+                }
+
+                &-button {
+                    &-mode {
+                        display: block;
+                    }
+
+                    &-dark {
+                        display: none;
+                    }
+                }
+            }
+
+            &__bell {
+                &-light {
+                    display: block;
+                }
+
+                &-dark {
+                    display: none;
+                }
+            }
+        }
+
+        & .NFT {
+            &__left {
+                &-title {
+                    color: #fff;
+                }
+
+                &-content {
+                    color: #fff;
+                }
+
+                &-button {
+                    & .content {
+                        color: #fff;
+                    }
+                }
+            }
+
+            &__right {
+                background-color: #fff;
+
+                &-blue {
+                    color: #6f4ff2;
+                }
+
+                &-size16px {
+                    color: #6c7aa0;
+                }
+            }
+        }
+
+        & .footer {
+            background: #fff;
+        }
+
+        & .trending {
+            &__button {
+                &.active {
+                    color: #fff;
+                }
+            }
+        }
+
+        & .bids {
+            &__card {
+                background: #fff;
+            }
+
+            &__time {
+                & span {
+                    color: #6c7aa0;
+                }
+            }
+
+            &__button {
+                color: #fff;
+            }
+        }
+
+        & .graph {
+            &__block {
+                background: #fff;
+
+                &-content {
+                    color: #50bb25;
+
+                    &-red {
+                        color: #dc3546;
+                    }
+                }
+            }
+
+            &__container {
+                padding: 34.63px 19px;
+                background: #fff;
+
+                &-light {
+                    display: block;
+                }
+
+                &-dark {
+                    display: none;
+                }
+            }
+
+            &__third {
+                background-color: #fff;
+            }
+
+            &__atwork {
+                &-circle {
+                    border: 1px solid #d0d0d0;
+                }
+            }
+        }
+
+        & .activity {
+            &__recent {
+                &-block {
+                    background: #fff;
+                }
+                
+                &-time {
+                    color: #68676e;
+                }
+            }
+
+            &__creator {
+                &-item {
+                    background: #fff;
+                }
+
+                &-button {
+                    background: transparent;
+                }
+            }
+        }
+
+        & .active {
+            &__table {
+                &-tr {
+                    background-color: #fff;
+                }
+
+                &-x {
+                    display: none;
+
+                    &-light {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        & .Bid {
+            &__href {
+                &-content {
+                    color: #6c7aa0;
+                }
+
+                &-light {
+                    display: block;
+                }
+
+                &-dark {
+                    display: none;
+                }
+            }
+        }
+
+        & .heart {
+            &__title {
+                &-right {
+                    & .xcontent {
+                        color: #6c7aa0;
+                    }
+                }
+            }
+        }
+
+        & .profile {
+            &__left {
+                background-color: #fff;
+            }
+
+            &__right {
+                &-button {
+                    background: #dc3546;
+                    color: #fff;
+                }
+            }
+        }
+
+        & .wave {
+            &__block {
+                background-color: #fff;
+            }
+        }
+
+        & .setting {
+            &__menu {
+                &-button {
+                    &.active {
+                        color: #6f4ff2;
+                    }
+                }
+            }
+        }
+
+        & .user {
+            &__block {
+                background-color: #fff;
+            }
+
+            & form {
+                & input {
+                    border: 0.50px solid #65646a;
+                    background-color: transparent;
+                    color: #000;
+                }
+            }
+
+            &__button {
+                & span {
+                    color: #fff;
+                }
+            }
+        }
+
+        & .info {
+            &__wrapper {
+                background-color: #fff;
+                
+                &-block {
+                    & input {
+                        border: 0.50px solid #65646a;
+                        background-color: transparent;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .container {
@@ -157,6 +441,10 @@ button {
             position: absolute;
             top: 12px;
             left: 19px;
+
+            &-mode {
+                display: none;
+            }
         }
 
         & input {
@@ -194,8 +482,18 @@ button {
         align-items: center;
         gap: 20px;
 
+        &-dark {
+            display: none;
+        }
+
         & button:last-child {
             margin-left: 16px;
+        }
+    }
+
+    &__bell {
+        &-light {
+            display: none;
         }
     }
 }
@@ -661,6 +959,11 @@ button {
         box-sizing: border-box;
         background: #1d1932;
         border-radius: 18px;
+
+        &-light {
+            display: none;
+            max-width: 478px;
+        }
     }
 
     &__third {
@@ -764,6 +1067,10 @@ button {
             margin-left: 19px;
             margin-right: auto;
 
+            & .other-text {
+                font-weight: 600;
+            }
+
             & span:first-child {
                 line-height: 24px;
             }
@@ -822,6 +1129,15 @@ button {
 
     &__table {
         margin-top: 50px;
+
+        &-x {
+            &-light {
+                display: none;
+                height: 11px;
+                width: 10px;
+                color: #000;
+            }
+        }
 
         & thead {
             margin-bottom: 30px;
@@ -997,6 +1313,10 @@ button {
             display: flex;
             line-height: 21px;
             color: #6c7aa0;
+        }
+
+        &-light {
+            display: none;
         }
     }
 
@@ -1174,6 +1494,12 @@ button {
         display: flex;
         gap: 20px;
         margin-bottom: 50px;
+
+        &-button {
+            &.active {
+                color: #6f4ff2;
+            }
+        }
     }
 }
 

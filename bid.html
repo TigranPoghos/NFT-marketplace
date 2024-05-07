@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,16 +13,21 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__row row header__row-bid">
+            <div class="header__row row">
                 <form action="#" class="header__form">
                     <button type="button" class="header__form-button">
-                        <img src="image/Search.png" alt="">
+                        <img class="header__form-button-dark" src="image/Search.png" alt="">
+                        <img class="header__form-button-mode" src="image/Search__white-mode.png" alt="">
                     </button>
                     <input type="text" placeholder="Search Here">
                 </form>
                 <div class="header__right">
-                    <button><img src="image/mode.png" alt=""></button>
-                    <button><img src="image/bell.png" alt=""></button>
+                    <button class="header__right-dark DarkMode"><img src="image/moon.png" alt=""></button>
+                    <button class="header__right-light LightMode"><img src="image/mode.png" alt=""></button>
+                    <button>
+                        <img class="header__bell-dark" src="image/bell.png" alt="">
+                        <img class="header__bell-light" src="image/bell-light.png" alt="">
+                    </button>
                     <button><img src="image/avatar.png" alt=""></button>
                 </div>
             </div>
@@ -36,7 +42,8 @@
                         <div class="content line__height-18px">Welcome Bids Page</div>
                         <div class="Bid__href">
                             <a href="#"><span class="content Bid__href-content">Home</span></a>
-                            <img src="image/Bid__arrow.png" alt="">
+                            <img class="Bid__href-dark" src="image/Bid__arrow.png" alt="">
+                            <img class="Bid__href-light" src="image/arrow-light.png" alt="">
                             <a href="#"><span class="content Bid__href-content">Bids</span></a>
                         </div>
                     </div>
@@ -127,7 +134,8 @@
                                             </td>
                                             <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
                                             <td class="active__table-td seventh">
-                                                <a href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                                <a class="active__table-x" href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                                <a class="active__table-x-light" href="#"><i class="fa-solid fa-xmark active__table-x-light"></i></a>
                                             </td>
                                 </tr>
                                 <tr class="active__table-tr">
@@ -151,7 +159,8 @@
                                             </td>
                                             <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
                                             <td class="active__table-td seventh">
-                                                <a href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                                <a class="active__table-x" href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                                <a class="active__table-x-light" href="#"><i class="fa-solid fa-xmark active__table-x-light"></i></a>
                                             </td>
                                 </tr>
                                 <tr class="active__table-tr">
@@ -175,7 +184,8 @@
                                     </td>
                                     <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
                                     <td class="active__table-td seventh">
-                                        <a href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                        <a class="active__table-x" href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                        <a class="active__table-x-light" href="#"><i class="fa-solid fa-xmark active__table-x-light"></i></a>
                                     </td>
                                 </tr>
                                 <tr class="active__table-tr">
@@ -199,7 +209,8 @@
                                     </td>
                                     <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
                                     <td class="active__table-td seventh">
-                                        <a href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                        <a class="active__table-x" href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                        <a class="active__table-x-light" href="#"><i class="fa-solid fa-xmark active__table-x-light"></i></a>
                                     </td>
                                 </tr>
                                 <tr class="active__table-tr">
@@ -223,7 +234,8 @@
                                             </td>
                                             <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
                                             <td class="active__table-td seventh">
-                                                <a href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                                <a class="active__table-x" href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                                <a class="active__table-x-light" href="#"><i class="fa-solid fa-xmark active__table-x-light"></i></a>
                                             </td>
                                 </tr>
                                 <tr class="active__table-tr">
@@ -247,7 +259,8 @@
                                     </td>
                                     <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
                                     <td class="active__table-td seventh">
-                                        <a href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                        <a class="active__table-x" href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                        <a class="active__table-x-light" href="#"><i class="fa-solid fa-xmark active__table-x-light"></i></a>
                                     </td>
                                 </tr>
                                 <tr class="active__table-tr">
@@ -271,7 +284,8 @@
                                     </td>
                                     <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
                                     <td class="active__table-td seventh">
-                                        <a href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                        <a class="active__table-x" href="#"><img class="active__table-x" src="image/table-x.png" alt=""></a>
+                                        <a class="active__table-x-light" href="#"><i class="fa-solid fa-xmark active__table-x-light"></i></a>
                                     </td>
                                 </tr>
                             </tbody>
