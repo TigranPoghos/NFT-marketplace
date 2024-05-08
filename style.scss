@@ -524,49 +524,35 @@ button {
 
     &__dashboard {
         max-width: 19px;
-
-        & img:first-child {
-            display: none;
-        }
     }
 
     &__bid {
         max-width: 19px;
-
-        & img:first-child {
-            display: none;
-        }
     }
 
     &__heart {
         max-width: 19px;
 
-        & img:first-child {
-            display: none;
+        &-active {
+            font-size: 19px;
+            color: #6f4ff2;
         }
     }
 
     &__collection {
         max-width: 22px;
-
-        & img:first-child {
-            display: none;
-        }
     }
 
     &__profile {
         max-width: 19px;
-        
-        & img:first-child {
-            display: none;
-        }
     }
 
     &__setting {
         max-width: 19px;
 
-        & img:first-child {
-            display: none;
+        &-active {
+            font-size: 19px;
+            color: #6f4ff2;
         }
     }
 
@@ -577,78 +563,6 @@ button {
         box-sizing: border-box;
         align-items: center;
         gap: 50px;
-
-        &-dashboard {
-            & .footer__dashboard {
-                & img:first-child {
-                    display: block;
-                }
-
-                & img:last-child {
-                    display: none;
-                }
-            }
-        }
-
-        &-bid {
-            & .footer__bid {
-                & img:first-child {
-                    display: block;
-                }
-
-                & img:last-child {
-                    display: none;
-                }
-            }
-        }
-
-        &-heart {
-            & .footer__heart {
-                & img:first-child {
-                    display: block;
-                }
-
-                & img:last-child {
-                    display: none;
-                }
-            }
-        }
-
-        &-collection {
-            & .footer__collection {
-                & img:first-child {
-                    display: block;
-                }
-
-                & img:last-child {
-                    display: none;
-                }
-            }
-        }
-
-        &-profile {
-            & .footer__profile {
-                & img:first-child {
-                    display: block;
-                }
-
-                & img:last-child {
-                    display: none;
-                }
-            }
-        }
-
-        &-setting {
-            & .footer__setting {
-                & img:first-child {
-                    display: block;
-                }
-
-                & img:last-child {
-                    display: none;
-                }
-            }
-        }
     }
 }
 
@@ -1162,6 +1076,10 @@ button {
             background: #1d1932;
             border-radius: 18px;
             margin-bottom: 20px;
+
+            &.active {
+                display: none;
+            }
         }
 
         &-td {
@@ -1533,8 +1451,6 @@ button {
     }
 
     & form {
-        margin-bottom: 20px;
-
         & input {
             width: 100%;
             background: #131129;
@@ -1561,6 +1477,7 @@ button {
         align-items: center;
         gap: 10px;
         margin-bottom: 20px;
+        margin-top: 20px;
 
         &-image {
             border-radius: 100%;
@@ -1601,7 +1518,7 @@ button {
         max-width: 599px;
         width: 100%;
 
-        & form {
+        & input {
             margin-bottom: 10px;
         }
 

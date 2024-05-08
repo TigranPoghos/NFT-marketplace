@@ -387,38 +387,28 @@ button {
 .footer__dashboard {
   max-width: 19px;
 }
-.footer__dashboard img:first-child {
-  display: none;
-}
 .footer__bid {
   max-width: 19px;
-}
-.footer__bid img:first-child {
-  display: none;
 }
 .footer__heart {
   max-width: 19px;
 }
-.footer__heart img:first-child {
-  display: none;
+.footer__heart-active {
+  font-size: 19px;
+  color: #6f4ff2;
 }
 .footer__collection {
   max-width: 22px;
 }
-.footer__collection img:first-child {
-  display: none;
-}
 .footer__profile {
   max-width: 19px;
-}
-.footer__profile img:first-child {
-  display: none;
 }
 .footer__setting {
   max-width: 19px;
 }
-.footer__setting img:first-child {
-  display: none;
+.footer__setting-active {
+  font-size: 19px;
+  color: #6f4ff2;
 }
 .footer__row {
   padding: 30px 25px 74px 25px;
@@ -427,42 +417,6 @@ button {
   box-sizing: border-box;
   align-items: center;
   gap: 50px;
-}
-.footer__row-dashboard .footer__dashboard img:first-child {
-  display: block;
-}
-.footer__row-dashboard .footer__dashboard img:last-child {
-  display: none;
-}
-.footer__row-bid .footer__bid img:first-child {
-  display: block;
-}
-.footer__row-bid .footer__bid img:last-child {
-  display: none;
-}
-.footer__row-heart .footer__heart img:first-child {
-  display: block;
-}
-.footer__row-heart .footer__heart img:last-child {
-  display: none;
-}
-.footer__row-collection .footer__collection img:first-child {
-  display: block;
-}
-.footer__row-collection .footer__collection img:last-child {
-  display: none;
-}
-.footer__row-profile .footer__profile img:first-child {
-  display: block;
-}
-.footer__row-profile .footer__profile img:last-child {
-  display: none;
-}
-.footer__row-setting .footer__setting img:first-child {
-  display: block;
-}
-.footer__row-setting .footer__setting img:last-child {
-  display: none;
 }
 
 .NFT {
@@ -893,6 +847,9 @@ button {
   border-radius: 18px;
   margin-bottom: 20px;
 }
+.active__table-tr.active {
+  display: none;
+}
 .active__table-td {
   display: flex;
   gap: 10px;
@@ -1189,9 +1146,6 @@ button {
   margin-bottom: 10px;
   font-weight: 600;
 }
-.user form {
-  margin-bottom: 20px;
-}
 .user form input {
   width: 100%;
   background: #131129;
@@ -1215,6 +1169,7 @@ button {
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .user__name-image {
   border-radius: 100%;
@@ -1248,7 +1203,7 @@ button {
   max-width: 599px;
   width: 100%;
 }
-.user__right form {
+.user__right input {
   margin-bottom: 10px;
 }
 .user__right .user__button {
