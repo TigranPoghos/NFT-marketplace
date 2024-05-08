@@ -159,6 +159,13 @@ body.active .activity__creator-item {
 body.active .activity__creator-button {
   background: transparent;
 }
+body.active .activity__creator-button.Unfollow {
+  background: #dc3546;
+  color: #fff;
+}
+body.active .activity__creator-button.Follow {
+  background: transparent;
+}
 body.active .active__table-tr {
   background-color: #fff;
 }
@@ -182,10 +189,6 @@ body.active .heart__title-right .xcontent {
 }
 body.active .profile__left {
   background-color: #fff;
-}
-body.active .profile__right-button {
-  background: #dc3546;
-  color: #fff;
 }
 body.active .wave__block {
   background-color: #fff;
@@ -580,6 +583,9 @@ button {
   padding: 20px 20px 21px 19px;
   box-sizing: border-box;
 }
+.bids__card.active {
+  display: none;
+}
 .bids__image {
   margin-bottom: 30px;
 }
@@ -810,6 +816,16 @@ button {
   background: rgba(111, 79, 242, 0);
   border-radius: 9px;
   line-height: 21px;
+}
+.activity__creator-button.Unfollow {
+  background: #dc3546;
+  border: none;
+  padding: 3.5px 18px;
+}
+.activity__creator-button.Follow {
+  background: rgba(111, 79, 242, 0);
+  padding: 2.5px 18px;
+  border: 1px solid #6f4ff2;
 }
 
 .active__row {
@@ -1072,11 +1088,6 @@ button {
 }
 .profile__right-subtitle {
   margin-bottom: 20px;
-}
-.profile__right-button {
-  background: #dc3546;
-  border: none;
-  padding: 3.5px 18px;
 }
 
 .wave__row {

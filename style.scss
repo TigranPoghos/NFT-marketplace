@@ -224,6 +224,15 @@ body {
 
                 &-button {
                     background: transparent;
+
+                    &.Unfollow {
+                        background: #dc3546;
+                        color: #fff;
+                    }
+
+                    &.Follow {
+                        background: transparent;
+                    }
                 }
             }
         }
@@ -273,13 +282,6 @@ body {
         & .profile {
             &__left {
                 background-color: #fff;
-            }
-
-            &__right {
-                &-button {
-                    background: #dc3546;
-                    color: #fff;
-                }
             }
         }
 
@@ -754,6 +756,10 @@ button {
         border-radius: 18px;
         padding: 20px 20px 21px 19px;
         box-sizing: border-box;
+
+        &.active {
+            display: none;
+        }
     }
 
     &__image {
@@ -1031,6 +1037,18 @@ button {
             background: rgba(111, 79, 242, 0);
             border-radius: 9px;
             line-height: 21px;
+
+            &.Unfollow {
+                background: #dc3546;
+                border: none;
+                padding: 3.5px 18px;
+            }
+
+            &.Follow {
+                background: rgba(111, 79, 242, 0);
+                padding: 2.5px 18px;
+                border: 1px solid #6f4ff2;
+            }
         }
     }
 }
@@ -1357,12 +1375,6 @@ button {
 
         &-subtitle {
             margin-bottom: 20px;
-        }
-
-        &-button {
-            background: #dc3546;
-            border: none;
-            padding: 3.5px 18px;
         }
     }
 }
