@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 
+
+    //artwork/book
     const ButtonArtwork = document.querySelector('.ButtonArtwork');
     const ButtonBook = document.querySelector('.ButtonBook');
     const bids__cards = document.querySelectorAll('.bids__card');
@@ -51,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         });
     });
-
     ButtonBook?.addEventListener('click', function() {
         bids__cards?.forEach(function(bids__card) {
             if (bids__card?.classList.contains('book')) {
@@ -64,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         });
     });
-
     ButtonAll?.addEventListener('click', function() {
         bids__cards?.forEach(function(bids__card) {
             bids__card?.classList.remove('active');
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 ActivityButton.innerHTML = 'Follow';
             }
         });
-    });
+    }); 
 
 
 
@@ -109,6 +109,75 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 
 
+
+
+
+    const ctx = document.getElementById('myChart')?.getContext('2d');
+        if (ctx) {
+            const myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['0', '1', '2', '3', '4', '5', '6', '7'],
+                    datasets: [{
+                        label: 'Dataset',
+                        data: [0, 110, 90, 160, 140, 210, 120, 100],
+                        backgroundColor: 'rgba(138, 43, 226, 0.2)',
+                        borderColor: '#6F4FF2',
+                        borderWidth: 2,
+                        fill: true,
+                        pointBackgroundColor: '#6F4FF2',
+                        pointBorderColor: '#6F4FF2',
+                        pointRadius: 5,
+                        pointHoverRadius: 7,
+                    }],
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false,
+                        },
+                    },
+                    scales: {
+                        x: {
+                            display: true,
+                            grid: {
+                                display: false,
+                            },
+                            ticks: {
+                                display: false,
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            display: true,
+                            grid: {
+                                display: false
+                            },
+                            min: 0,
+                            max: 350,
+                            ticks: {
+                                stepSize: 50,
+                                color: '#6F4FF2',
+                            },
+                        },
+                    },
+                    layout: {
+                        padding: 0,
+                    },
+                    backgroundColor: '#1D1932', // Цвет фона графика
+                },
+            });
+        }
+
+
+
+
+
+        if (document.querySelector('.swiper-container')) {
+            var swiper = new Swiper('.swiper-container', {
+            });
+        }
 
 
 })

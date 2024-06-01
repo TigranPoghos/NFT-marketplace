@@ -8,12 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__row row">
+                <div class="header__logo">
+                    <img src="image/Logo.png" alt="">
+                </div>
                 <form action="#" class="header__form">
                     <button type="button" class="header__form-button">
                         <img class="header__form-button-dark" src="image/Search.png" alt="">
@@ -272,8 +276,7 @@
                     <div class="graph__bid">
                         <div class="subtitle">ETH Price</div>
                         <div class="graph__container">
-                            <img class="graph__container-light" src="image/graph-1-light.png" alt="">
-                            <img class="graph__container-dark" src="image/graph-1.png" alt="">
+                            <canvas id="myChart"></canvas>
                         </div>
                     </div>
                     <div class="graph__bid">
@@ -319,7 +322,7 @@
                                 <div class="activity__recent-image"><img src="image/Avatar__NFT.png" alt=""></div>
                                 <div class="activity__recent-name">
                                     <span class="other-text">Papaya</span>
-                                    <span class="content">Purchase by you for 0.05 ETH</span>
+                                    <span class="content">0.06ETH Received</span>
                                 </div>
                                 <span class="activity__recent-time content">12 mins ago</span>
                             </div>
@@ -327,7 +330,7 @@
                                 <div class="activity__recent-image"><img src="image/Avatar__NFT.png" alt=""></div>
                                 <div class="activity__recent-name">
                                     <span class="other-text">Papaya</span>
-                                    <span class="content">Purchase by you for 0.05 ETH</span>
+                                    <span class="content">Started Following you</span>
                                 </div>
                                 <span class="activity__recent-time content">12 mins ago</span>
                             </div>
@@ -335,7 +338,7 @@
                                 <div class="activity__recent-image"><img src="image/Avatar__NFT.png" alt=""></div>
                                 <div class="activity__recent-name">
                                     <span class="other-text">Papaya</span>
-                                    <span class="content">Purchase by you for 0.05 ETH</span>
+                                    <span class="content">Has been sold by 12.75ETH</span>
                                 </div>
                                 <span class="activity__recent-time content">12 mins ago</span>
                             </div>
@@ -427,162 +430,170 @@
             <div class="container">
                 <div class="active__row row">
                     <div class="title">Active Bids</div>
-                    <table class="active__table">
-                        <thead>
-                            <tr class="active__table-tr">
-                                <th class="active__table-th first">
-                                    <form class="active__table-form" action="#">
-                                        <input class="active__table-checkbox" type="checkbox">
-                                    </form>
-                                </th>
-                                <th class="active__table-th second">
-                                    <span class="content active__table-content">Item List</span>
-                                </th>
-                                <th class="active__table-th third">
-                                    <span class="content active__table-content">Open Price</span>
-                                </th>
-                                <th class="active__table-th fourth">
-                                    <span class="content active__table-content">Your Offer</span>
-                                </th>
-                                <th class="active__table-th fifth">
-                                    <span class="content active__table-content">Recent Offer</span>
-                                </th>
-                                <th class="active__table-th sixth">
-                                    <span class="content active__table-content">Time Left</span>
-                                </th>
-                                <th class="active__table-th seventh">
-                                    <span class="content active__table-content">Action</span>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="active__table-tr ActiveTable">
-                                <td class="active__table-th first">
-                                    <form class="active__table-form" action="#">
-                                        <input class="active__table-checkbox" type="checkbox">
-                                    </form>
-                                </td>
-                                <td class="active__table-td second">
-                                    <img class="active__table-image" src="image/table-1.png" alt="">
-                                    <div class="active__table-name">
-                                        <span class="content-600">Cute Cube Cool</span>
-                                        <span class="content line__height-18px">John Abraham</span>
-                                    </div>
-                                </td>
-                                <td class="active__table-td third"><span class="content">0.0025 ETH</span></td>
-                                <td class="active__table-td fourth"><span class="content">0.0025 ETH</span></td>
-                                <td class="active__table-td fifth">
-                                    <img class="active__table-avatar" src="image/table-avatar.png" alt="">
-                                    <span class="content">0.0025 ETH</span>
-                                </td>
-                                <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
-                                <td class="active__table-td seventh">
-                                    <button class="active__table-x ActiveDelete"><img class="active__table-x" src="image/table-x.png" alt=""></button>
-                                    <button class="active__table-x-light ActiveDelete"><i class="fa-solid fa-xmark active__table-x-light"></i></button>
-                                </td>
-                            </tr>
-                            <tr class="active__table-tr ActiveTable">
-                                <td class="active__table-th first">
-                                    <form class="active__table-form" action="#">
-                                        <input class="active__table-checkbox" type="checkbox">
-                                    </form>
-                                </td>
-                                <td class="active__table-td second">
-                                    <img class="active__table-image" src="image/table-2.png" alt="">
-                                    <div class="active__table-name">
-                                        <span class="content-600">Liquid Wave</span>
-                                        <span class="content">John Abraham</span>
-                                    </div>
-                                </td>
-                                <td class="active__table-td third"><span class="content">0.0025 ETH</span></td>
-                                <td class="active__table-td fourth"><span class="content">0.0025 ETH</span></td>
-                                <td class="active__table-td fifth">
-                                    <img class="active__table-avatar" src="image/table-avatar.png" alt="">
-                                    <span class="content">0.0025 ETH</span>
-                                </td>
-                                <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
-                                <td class="active__table-td seventh">
-                                    <button class="active__table-x ActiveDelete"><img class="active__table-x" src="image/table-x.png" alt=""></button>
-                                    <button class="active__table-x-light ActiveDelete"><i class="fa-solid fa-xmark active__table-x-light"></i></button>
-                                </td>
-                            </tr>
-                            <tr class="active__table-tr ActiveTable">
-                                <td class="active__table-th first">
-                                    <form class="active__table-form" action="#">
-                                        <input class="active__table-checkbox" type="checkbox">
-                                    </form>
-                                </td>
-                                <td class="active__table-td second">
-                                    <img class="active__table-image" src="image/table-1.png" alt="">
-                                    <div class="active__table-name">
-                                        <span class="content-600">Cute Cube Cool</span>
-                                        <span class="content line__height-18px">John Abraham</span>
-                                    </div>
-                                </td>
-                                <td class="active__table-td third"><span class="content">0.0025 ETH</span></td>
-                                <td class="active__table-td fourth"><span class="content">0.0025 ETH</span></td>
-                                <td class="active__table-td fifth">
-                                    <img class="active__table-avatar" src="image/table-avatar.png" alt="">
-                                    <span class="content">0.0025 ETH</span>
-                                </td>
-                                <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
-                                <td class="active__table-td seventh">
-                                    <button class="active__table-x ActiveDelete"><img class="active__table-x" src="image/table-x.png" alt=""></button>
-                                    <button class="active__table-x-light ActiveDelete"><i class="fa-solid fa-xmark active__table-x-light"></i></button>
-                                </td>
-                            </tr>
-                            <tr class="active__table-tr ActiveTable">
-                                <td class="active__table-th first">
-                                    <form class="active__table-form" action="#">
-                                        <input class="active__table-checkbox" type="checkbox">
-                                    </form>
-                                </td>
-                                <td class="active__table-td second">
-                                    <img class="active__table-image" src="image/table-3.png" alt="">
-                                    <div class="active__table-name">
-                                        <span class="content-600">Liquid Wave</span>
-                                        <span class="content">John Abraham</span>
-                                    </div>
-                                </td>
-                                <td class="active__table-td third"><span class="content">0.0025 ETH</span></td>
-                                <td class="active__table-td fourth"><span class="content">0.0025 ETH</span></td>
-                                <td class="active__table-td fifth">
-                                    <img class="active__table-avatar" src="image/table-avatar.png" alt="">
-                                    <span class="content">0.0025 ETH</span>
-                                </td>
-                                <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
-                                <td class="active__table-td seventh">
-                                    <button class="active__table-x ActiveDelete"><img class="active__table-x" src="image/table-x.png" alt=""></button>
-                                    <button class="active__table-x-light ActiveDelete"><i class="fa-solid fa-xmark active__table-x-light"></i></button>
-                                </td>
-                            </tr>
-                            <tr class="active__table-tr ActiveTable">
-                                <td class="active__table-th first">
-                                    <form class="active__table-form" action="#">
-                                        <input class="active__table-checkbox" type="checkbox">
-                                    </form>
-                                </td>
-                                <td class="active__table-td second">
-                                    <img class="active__table-image" src="image/table-4.png" alt="">
-                                    <div class="active__table-name">
-                                        <span class="content-600">Liquid Wave</span>
-                                        <span class="content">John Abraham</span>
-                                    </div>
-                                </td>
-                                <td class="active__table-td third"><span class="content">0.0025 ETH</span></td>
-                                <td class="active__table-td fourth"><span class="content">0.0025 ETH</span></td>
-                                <td class="active__table-td fifth">
-                                    <img class="active__table-avatar" src="image/table-avatar.png" alt="">
-                                    <span class="content">0.0025 ETH</span>
-                                </td>
-                                <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
-                                <td class="active__table-td seventh">
-                                    <button class="active__table-x ActiveDelete"><img class="active__table-x" src="image/table-x.png" alt=""></button>
-                                    <button class="active__table-x-light ActiveDelete"><i class="fa-solid fa-xmark active__table-x-light"></i></button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="table-container">
+                                <table class="active__table">
+                                    <thead>
+                                        <tr class="active__table-tr">
+                                            <th class="active__table-th first">
+                                                <form class="active__table-form" action="#">
+                                                    <input class="active__table-checkbox" type="checkbox">
+                                                </form>
+                                            </th>
+                                            <th class="active__table-th second">
+                                                <span class="content active__table-content">Item List</span>
+                                            </th>
+                                            <th class="active__table-th third">
+                                                <span class="content active__table-content">Open Price</span>
+                                            </th>
+                                            <th class="active__table-th fourth">
+                                                <span class="content active__table-content">Your Offer</span>
+                                            </th>
+                                            <th class="active__table-th fifth">
+                                                <span class="content active__table-content">Recent Offer</span>
+                                            </th>
+                                            <th class="active__table-th sixth">
+                                                <span class="content active__table-content">Time Left</span>
+                                            </th>
+                                            <th class="active__table-th seventh">
+                                                <span class="content active__table-content">Action</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="active__table-tr ActiveTable">
+                                            <td class="active__table-th first">
+                                                <form class="active__table-form" action="#">
+                                                    <input class="active__table-checkbox" type="checkbox">
+                                                </form>
+                                            </td>
+                                            <td class="active__table-td second">
+                                                <img class="active__table-image" src="image/table-1.png" alt="">
+                                                <div class="active__table-name">
+                                                    <span class="content-600">Cute Cube Cool</span>
+                                                    <span class="content line__height-18px">John Abraham</span>
+                                                </div>
+                                            </td>
+                                            <td class="active__table-td third"><span class="content">0.0025 ETH</span></td>
+                                            <td class="active__table-td fourth"><span class="content">0.0025 ETH</span></td>
+                                            <td class="active__table-td fifth">
+                                                <img class="active__table-avatar" src="image/table-avatar.png" alt="">
+                                                <span class="content">0.0025 ETH</span>
+                                            </td>
+                                            <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
+                                            <td class="active__table-td seventh">
+                                                <button class="active__table-x ActiveDelete"><img class="active__table-x" src="image/table-x.png" alt=""></button>
+                                                <button class="active__table-x-light ActiveDelete"><i class="fa-solid fa-xmark active__table-x-light"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="active__table-tr ActiveTable">
+                                            <td class="active__table-th first">
+                                                <form class="active__table-form" action="#">
+                                                    <input class="active__table-checkbox" type="checkbox">
+                                                </form>
+                                            </td>
+                                            <td class="active__table-td second">
+                                                <img class="active__table-image" src="image/table-2.png" alt="">
+                                                <div class="active__table-name">
+                                                    <span class="content-600">Liquid Wave</span>
+                                                    <span class="content">John Abraham</span>
+                                                </div>
+                                            </td>
+                                            <td class="active__table-td third"><span class="content">0.0025 ETH</span></td>
+                                            <td class="active__table-td fourth"><span class="content">0.0025 ETH</span></td>
+                                            <td class="active__table-td fifth">
+                                                <img class="active__table-avatar" src="image/table-avatar.png" alt="">
+                                                <span class="content">0.0025 ETH</span>
+                                            </td>
+                                            <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
+                                            <td class="active__table-td seventh">
+                                                <button class="active__table-x ActiveDelete"><img class="active__table-x" src="image/table-x.png" alt=""></button>
+                                                <button class="active__table-x-light ActiveDelete"><i class="fa-solid fa-xmark active__table-x-light"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="active__table-tr ActiveTable">
+                                            <td class="active__table-th first">
+                                                <form class="active__table-form" action="#">
+                                                    <input class="active__table-checkbox" type="checkbox">
+                                                </form>
+                                            </td>
+                                            <td class="active__table-td second">
+                                                <img class="active__table-image" src="image/table-1.png" alt="">
+                                                <div class="active__table-name">
+                                                    <span class="content-600">Cute Cube Cool</span>
+                                                    <span class="content line__height-18px">John Abraham</span>
+                                                </div>
+                                            </td>
+                                            <td class="active__table-td third"><span class="content">0.0025 ETH</span></td>
+                                            <td class="active__table-td fourth"><span class="content">0.0025 ETH</span></td>
+                                            <td class="active__table-td fifth">
+                                                <img class="active__table-avatar" src="image/table-avatar.png" alt="">
+                                                <span class="content">0.0025 ETH</span>
+                                            </td>
+                                            <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
+                                            <td class="active__table-td seventh">
+                                                <button class="active__table-x ActiveDelete"><img class="active__table-x" src="image/table-x.png" alt=""></button>
+                                                <button class="active__table-x-light ActiveDelete"><i class="fa-solid fa-xmark active__table-x-light"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="active__table-tr ActiveTable">
+                                            <td class="active__table-th first">
+                                                <form class="active__table-form" action="#">
+                                                    <input class="active__table-checkbox" type="checkbox">
+                                                </form>
+                                            </td>
+                                            <td class="active__table-td second">
+                                                <img class="active__table-image" src="image/table-3.png" alt="">
+                                                <div class="active__table-name">
+                                                    <span class="content-600">Liquid Wave</span>
+                                                    <span class="content">John Abraham</span>
+                                                </div>
+                                            </td>
+                                            <td class="active__table-td third"><span class="content">0.0025 ETH</span></td>
+                                            <td class="active__table-td fourth"><span class="content">0.0025 ETH</span></td>
+                                            <td class="active__table-td fifth">
+                                                <img class="active__table-avatar" src="image/table-avatar.png" alt="">
+                                                <span class="content">0.0025 ETH</span>
+                                            </td>
+                                            <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
+                                            <td class="active__table-td seventh">
+                                                <button class="active__table-x ActiveDelete"><img class="active__table-x" src="image/table-x.png" alt=""></button>
+                                                <button class="active__table-x-light ActiveDelete"><i class="fa-solid fa-xmark active__table-x-light"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="active__table-tr ActiveTable">
+                                            <td class="active__table-th first">
+                                                <form class="active__table-form" action="#">
+                                                    <input class="active__table-checkbox" type="checkbox">
+                                                </form>
+                                            </td>
+                                            <td class="active__table-td second">
+                                                <img class="active__table-image" src="image/table-4.png" alt="">
+                                                <div class="active__table-name">
+                                                    <span class="content-600">Liquid Wave</span>
+                                                    <span class="content">John Abraham</span>
+                                                </div>
+                                            </td>
+                                            <td class="active__table-td third"><span class="content">0.0025 ETH</span></td>
+                                            <td class="active__table-td fourth"><span class="content">0.0025 ETH</span></td>
+                                            <td class="active__table-td fifth">
+                                                <img class="active__table-avatar" src="image/table-avatar.png" alt="">
+                                                <span class="content">0.0025 ETH</span>
+                                            </td>
+                                            <td class="active__table-td sixth"><span class="content">2 Hours 1 min 30s</span></td>
+                                            <td class="active__table-td seventh">
+                                                <button class="active__table-x ActiveDelete"><img class="active__table-x" src="image/table-x.png" alt=""></button>
+                                                <button class="active__table-x-light ActiveDelete"><i class="fa-solid fa-xmark active__table-x-light"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -616,6 +627,8 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
 </body>
